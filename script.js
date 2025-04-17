@@ -48,13 +48,16 @@ const teamMembers = [
 let cardsHtml = ``;
 for (const member of teamMembers) {
   cardsHtml += `
-  <div class="team-card">
-    <div class="card-image">
-      <img src="${member.img}" alt="${member.name}" />
-    </div>
-    <div class="card-text">
-      <h3>${member.name}</h3>
-      <p>${member.role}</p>
+  <div class="col">
+    <div class="team-card d-flex">
+      <div class="card-image">
+        <img src="${member.img}" alt="${member.name}" />
+      </div>
+      <div class="card-text ms-3">
+        <h3>${member.name.toUpperCase()}</h3>
+        <p>${member.role}</p>
+        <a href="mailto:${member.email}" class="email">${member.email}</a>
+      </div>
     </div>
   </div>`;
 }

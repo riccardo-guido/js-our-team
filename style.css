@@ -1,0 +1,49 @@
+body {
+  font-family: "Poetsen One", sans-serif;
+}
+
+#team h2,
+p {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+#team h2 {
+  color: rgb(226, 43, 122);
+  font-family: "Poetsen One", sans-serif;
+  font-weight: bold;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+}
+
+.team-card {
+  background-color: black;
+  color: white;
+  align-items: center;
+  display: flex;
+}
+.card-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.card-text h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.card-text .email {
+  color: #00bfff;
+  text-decoration: none;
+}
+.card-text .email:hover {
+  text-decoration: underline;
+}
+.team-container {
+  margin-top: 2rem;
+}
